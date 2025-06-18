@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 p-4">
       <motion.div 
-        className="container mx-auto"
+        className="container mx-auto max-w-container"
         initial={{ opacity: 0, y: -20 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.5 }}
@@ -23,7 +23,7 @@ export const Header = () => {
                 alt="Leadgenerator.io Logo" 
                 className="h-8 w-auto mr-2" 
               />
-              <span className="text-white text-xl font-bold">Leadgenerator.io</span>
+              <span className="text-text-light text-xl font-bold">Leadgenerator.io</span>
             </motion.div>
             
             <motion.nav 
@@ -32,19 +32,19 @@ export const Header = () => {
               animate={{ opacity: 1 }} 
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <a href="#" className="text-white/90 hover:text-white transition-colors duration-200 font-medium">
+              <a href="#" className="text-text-light/90 hover:text-accent-teal transition-colors duration-200 font-medium text-md">
                 Product
               </a>
-              <a href="#" className="text-white/90 hover:text-white transition-colors duration-200 font-medium">
+              <a href="#" className="text-text-light/90 hover:text-accent-teal transition-colors duration-200 font-medium text-md">
                 Features
               </a>
-              <a href="#" className="text-white/90 hover:text-white transition-colors duration-200 font-medium">
+              <a href="#" className="text-text-light/90 hover:text-accent-teal transition-colors duration-200 font-medium text-md">
                 Pricing
               </a>
-              <a href="#" className="text-white/90 hover:text-white transition-colors duration-200 font-medium">
+              <a href="#" className="text-text-light/90 hover:text-accent-teal transition-colors duration-200 font-medium text-md">
                 Company
               </a>
-              <a href="#" className="text-white/90 hover:text-white transition-colors duration-200 font-medium">
+              <a href="#" className="text-text-light/90 hover:text-accent-teal transition-colors duration-200 font-medium text-md">
                 Support
               </a>
             </motion.nav>
@@ -55,13 +55,13 @@ export const Header = () => {
               animate={{ opacity: 1, x: 0 }} 
               transition={{ duration: 0.5 }}
             >
-              <button className="text-white border border-white/30 px-6 py-2 rounded-full hover:bg-white/10 transition-all duration-200 backdrop-blur-sm">
+              <button className="text-text-light border border-white/30 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-200 backdrop-blur-sm font-medium">
                 Login
               </button>
-              <button className="relative bg-green-500 text-white px-6 py-2 rounded-full overflow-hidden group hover:shadow-lg hover:shadow-green-500/25 transition-all duration-300">
+              <button className="relative bg-cta-orange text-base-100 px-6 py-3 rounded-full overflow-hidden group hover:shadow-button-primary transition-all duration-300 font-semibold">
                 <span className="relative z-10">Start Trial</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute -inset-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full blur opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-cta-orange to-cta-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-cta-orange to-cta-gold rounded-full blur opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
               </button>
             </motion.div>
           </div>

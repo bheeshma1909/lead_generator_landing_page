@@ -9,19 +9,18 @@ import { HowItWorks } from './components/HowItWorks';
 import { AccountProspecting } from './components/AccountProspecting';
 import { Footer } from './components/Footer';
 import { motion } from 'framer-motion';
+
 export function App() {
-  return <div className="flex flex-col w-full min-h-screen bg-[#0F1218]">
-      <motion.div initial={{
-      opacity: 0,
-      y: -20
-    }} animate={{
-      opacity: 1,
-      y: 0
-    }} transition={{
-      duration: 0.5
-    }}>
+  return (
+    <div className="flex flex-col w-full min-h-screen bg-base-100 font-primary text-text-light">
+      <motion.div 
+        initial={{ opacity: 0, y: -20 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.5 }}
+      >
         <Header />
       </motion.div>
+      
       <main className="flex-1">
         <Hero />
         <Features />
@@ -31,15 +30,14 @@ export function App() {
         <HowItWorks />
         <AccountProspecting />
       </main>
-      <motion.div initial={{
-      opacity: 0
-    }} animate={{
-      opacity: 1
-    }} transition={{
-      duration: 0.5,
-      delay: 1.8
-    }}>
+      
+      <motion.div 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 0.5, delay: 1.8 }}
+      >
         <Footer />
       </motion.div>
-    </div>;
+    </div>
+  );
 }
